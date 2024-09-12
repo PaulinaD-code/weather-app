@@ -1,0 +1,136 @@
+body{
+  background-size:cover;
+  height: 100vh;
+  margin-top:15px;
+  margin-left:20px;
+  background-color: rgb(5, 29, 5);
+}
+
+p{
+  font-family:"Open Sans", Arial;
+  font-size: 14px;
+  color:#fff;
+  letter-spacing: 1px;
+  text-align:justify;
+  text-shadow:0 0 2px black;
+}
+
+.heading{
+  font-family:"Open Sans", Arial;
+  color:#fff;
+  font-size: 25px;
+  font-weight:bold;
+  letter-spacing: 1px;
+  margin-bottom:50px; 
+}
+
+.submit{
+  background-color: #c3112d;;
+  width:70px;
+  height:25px;
+  border:none;
+  border-radius:5px;
+  font-family:"Open Sans", Arial;
+  font-size: 13px;
+  color: #fff;
+}
+
+.city-input{
+  font-family:"Open Sans", Arial;
+  font-size: 14px;
+  color:black;
+  padding: 3px;
+  border-bottom: solid 1px #fff;
+}
+
+.cities{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 20px;
+}
+
+.city-name{
+  font-size:30px;
+}
+
+.country{
+  width: 30px;
+  height:15px;
+  padding: 3px 6px;
+  color:white;
+  font-size:13px;
+  background-color: #869598 ;
+  border-radius: 10px;
+}
+
+.city-icon{
+  width:40%;
+  height:auto;
+  margin: 20px 15px 5px 5px;
+}
+
+.city-icon1{
+  width:30%;
+  height:auto;
+  margin: 20px 15px 5px 15px;
+}
+
+.city-temp{
+  font-size:70px;
+  font-weight:bold;
+  margin-top:20px;
+}
+
+.city{
+  display:flex;
+  flex-direction: column;
+  background-color:#fff ;
+  font-size: 13px;
+  color:#1e2432;
+  font-family: "Open Sans", Arial;
+  border-radius: 10px;
+  padding:20px;
+  line-height: 40px;
+}
+
+@media screen and(max-width: 700px) {
+  .heading,
+  .ajax-section .city-temp {
+    font-size: 3rem;
+  }
+
+  .ajax-section {
+    margin-top:20px;
+  }
+
+  .top-banner form {
+    flex-direction:column;
+    align-items: flex-start;
+  }
+
+  .top-banner form input,
+  .top-banner form button {
+    width: 100%;
+  }
+
+  .top-banner form button {
+    margin: 20px 0 0 0;
+  }
+
+  .top-banner form .msg {
+    position: static;
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    padding:15px;
+  }
+
+  .ajax-section .cities {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
